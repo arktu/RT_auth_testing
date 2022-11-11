@@ -15,7 +15,14 @@ def test_reg_passwords_differ(web_browser):
     # проверка, что мы на странице Регистрации
     assert page.first_name_input.find()
 
-    # заполняем корректными данными все поля, кроме имени
+    # открываем видимость паролей
+    eye = page.password_eyes.find()[0]
+    eye.click()
+
+    eye = page.password_eyes.find()[1]
+    eye.click()
+
+    # заполняем корректными данными все поля, кроме второго пароля
     page.first_name_input.send_keys("Иван")
     page.last_name_input.send_keys("Петров")
     page.phone_email_input.send_keys("sfsf-test@test.ru")
