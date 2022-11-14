@@ -38,7 +38,7 @@ def test_reg_invalid_confirm_password(web_browser, password, error_expected):
     # заполняем корректными данными все поля, кроме пароля
     page.first_name_input.send_keys("Иван")
     page.last_name_input.send_keys("Петров")
-    page.phone_email_input.send_keys("sfsf-test@test.ru")
+    page.phone_email_input.send_keys(EMAIL_TEST)
 
     page.password_input.send_keys("The-password")
     page.password_confirm_input.send_keys(password)

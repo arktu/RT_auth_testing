@@ -19,7 +19,7 @@ def test_reg_valid_phone_with_invalid_code(web_browser):
     # заполняем корректными данными все поля, кроме имени
     page.first_name_input.send_keys("Иван")
     page.last_name_input.send_keys("Петров")
-    page.phone_email_input.send_keys("+79059928947")
+    page.phone_email_input.send_keys(PHONE_UNREGISTERED)
     page.password_input.send_keys("The_password")
     page.password_confirm_input.send_keys("The_password")
 
