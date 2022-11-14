@@ -2,7 +2,7 @@ AUTH_URL = 'https://b2c.passport.rt.ru/'
 RESET_URL = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials'
 
 
-# эти константы нужно заполнить вашими реальными данными
+# эти константы нужно заполнить реальными данными
 EMAIL_VALID = ""  # валидный email зарегистрированного аккаунта
 PASSWORD_VALID = ""  # валидный пароль зарегистрированного аккаунта
 PHONE_VALID = ""  # реальный телефон зарегистрированного аккаунта
